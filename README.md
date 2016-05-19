@@ -121,3 +121,12 @@ The application is by default configured to use MySQL. If you want to use anothe
 ## License
 
 This application is open source under the [MIT License](https://opensource.org/licenses/MIT) terms.
+
+
+### Heroku
+
+heroku git:remote -a duckrails
+
+git push heroku master
+
+heroku run rake db:migrate
