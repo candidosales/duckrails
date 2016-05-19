@@ -29,7 +29,14 @@ test: &test
   database: db/test.sqlite3
 
 production:
-  <<: *default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  timeout: 5000
+  socket: /tmp/mysql.sock
+  username: b7e3ed21c3c5fd
+  password: 30c5b071
+  host: localhost
   database: duckrails_production
 
 cucumber:
