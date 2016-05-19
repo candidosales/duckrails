@@ -10,9 +10,6 @@ default: &default
   pool: 5
   timeout: 5000
   socket: /tmp/mysql.sock
-  username: root
-  password: password
-  host: localhost
 
 development:
   <<: *default
@@ -29,12 +26,7 @@ test: &test
   database: db/test.sqlite3
 
 production:
-  adapter: mysql2
-  encoding: utf8
-  pool: 5
-  timeout: 5000
-  socket: /tmp/mysql.sock
-  host: <%= ENV['CLEARDB_DATABASE_URL']%>
+  <<: *default
   database: duckrails_production
 
 cucumber:
