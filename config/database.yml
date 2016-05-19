@@ -10,6 +10,9 @@ default: &default
   pool: 5
   timeout: 5000
   socket: /tmp/mysql.sock
+  username: root
+  password: password
+  host: localhost
 
 development:
   <<: *default
