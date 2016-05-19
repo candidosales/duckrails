@@ -34,8 +34,6 @@ production:
   pool: 5
   timeout: 5000
   socket: /tmp/mysql.sock
-  username: <%= ENV['USERNAME_DATABASE'] %>
-  password: <%= ENV['PASSWORD_DATABASE'] %>
   host: <%= ENV['CLEARDB_DATABASE_URL']%>
   database: duckrails_production
 
