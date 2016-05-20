@@ -3,6 +3,8 @@ require 'libxml'
 
 module Duckrails
   class MocksController < ApplicationController
+    http_basic_authenticate_with name: "quake@brasilct.com", password: "brasilct-2016" 
+
     before_action :load_mock, only: [:edit, :update, :destroy, :deactivate, :activate]
     after_action :reload_routes, only: [:update, :create, :destroy, :deactivate, :activate, :update_order]
 
