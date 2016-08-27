@@ -125,8 +125,11 @@ This application is open source under the [MIT License](https://opensource.org/l
 
 ### Heroku
 
+```
+
 heroku git:remote -a duckrails
 
 git push heroku master
 
 heroku run rake db:migrate
+```
