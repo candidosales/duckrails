@@ -1,6 +1,6 @@
 module Duckrails
   class HomeController < ApplicationController
-    http_basic_authenticate_with name: "quake@brasilct.com", password: "brasilct-2016" 
+    http_basic_authenticate_with name: "hackaton", password: "hacknubank" 
 
     def index
     end
